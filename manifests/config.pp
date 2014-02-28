@@ -105,31 +105,31 @@ class proftpd::config(
     mode    => '0644',
   }
 
-  proftpd::mods {'ctrls_admin': ensure => 'present' }
-  proftpd::mods {'radius': ensure => 'present' }
-  proftpd::mods {'quotatab': ensure => 'present' }
-  proftpd::mods {'quotatab_file': ensure => 'present' }
-  proftpd::mods {'quotatab_radius': ensure => 'present' }
-  proftpd::mods {'wrap': ensure => 'present' }
-  proftpd::mods {'rewrite': ensure => 'present' }
-  proftpd::mods {'load': ensure => 'present' }
-  proftpd::mods {'ban': ensure => 'present' }
-  proftpd::mods {'wrap2': ensure => 'present' }
-  proftpd::mods {'wrap2_file': ensure => 'present' }
-  proftpd::mods {'dynmasq': ensure => 'present' }
-  proftpd::mods {'exec': ensure => 'present' }
-  proftpd::mods {'shaper': ensure => 'present' }
-  proftpd::mods {'ratio': ensure => 'present' }
-  proftpd::mods {'site_misc': ensure => 'present' }
-  proftpd::mods {'sftp': ensure => 'present' }
-  proftpd::mods {'sftp_pam': ensure => 'present' }
-  proftpd::mods {'facl': ensure => 'present' }
-  proftpd::mods {'unique_id': ensure => 'present' }
-  proftpd::mods {'copy': ensure => 'present' }
-  proftpd::mods {'deflate': ensure => 'present' }
-  proftpd::mods {'ifversion': ensure => 'present' }
-  proftpd::mods {'tls_memcache': ensure => 'present' }
-  proftpd::mods {'ifsession': ensure => 'present' }
+  # proftpd::mods {'ctrls_admin': ensure => 'present' }
+  # proftpd::mods {'radius': ensure => 'present' }
+  # proftpd::mods {'quotatab': ensure => 'present' }
+  # proftpd::mods {'quotatab_file': ensure => 'present' }
+  # proftpd::mods {'quotatab_radius': ensure => 'present' }
+  # proftpd::mods {'wrap': ensure => 'present' }
+  # proftpd::mods {'rewrite': ensure => 'present' }
+  # proftpd::mods {'load': ensure => 'present' }
+  # proftpd::mods {'ban': ensure => 'present' }
+  # proftpd::mods {'wrap2': ensure => 'present' }
+  # proftpd::mods {'wrap2_file': ensure => 'present' }
+  # proftpd::mods {'dynmasq': ensure => 'present' }
+  # proftpd::mods {'exec': ensure => 'present' }
+  # proftpd::mods {'shaper': ensure => 'present' }
+  # proftpd::mods {'ratio': ensure => 'present' }
+  # proftpd::mods {'site_misc': ensure => 'present' }
+  # proftpd::mods {'sftp': ensure => 'present' }
+  # proftpd::mods {'sftp_pam': ensure => 'present' }
+  # proftpd::mods {'facl': ensure => 'present' }
+  # proftpd::mods {'unique_id': ensure => 'present' }
+  # proftpd::mods {'copy': ensure => 'present' }
+  # proftpd::mods {'deflate': ensure => 'present' }
+  # proftpd::mods {'ifversion': ensure => 'present' }
+  # proftpd::mods {'tls_memcache': ensure => 'present' }
+  # proftpd::mods {'ifsession': ensure => 'present' }
 
 
 
