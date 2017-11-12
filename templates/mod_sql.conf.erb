@@ -11,9 +11,9 @@
 # or comment out the unused module in /etc/proftpd/modules.conf.
 # Use 'mysql' or 'postgres' as possible values.
 #
-SQLBackend	<%= sql_backend %>
+SQLBackend	<%= @sql_backend %>
 #
-SQLEngine <%= sql_engine %>
+SQLEngine <%= @sql_engine %>
 SQLAuthenticate on
 #
 #
@@ -21,7 +21,7 @@ SQLAuthenticate on
 SQLAuthTypes Backend Crypt OpenSSL SHA1 MD5
 #
 # Connection 
-SQLConnectInfo <%= sql_dbname %>@<%= sql_host %> <%= sql_username %> <%= sql_password %>
+SQLConnectInfo <%= @sql_dbname %>@<%= @sql_host %> <%= @sql_username %> <%= @sql_password %>
 #
 # Describes both users/groups tables
 #
