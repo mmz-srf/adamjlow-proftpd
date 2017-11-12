@@ -18,7 +18,7 @@ SQLAuthenticate on
 #
 #
 # Use a backend-crypted or a crypted password
-SQLAuthTypes Backend Crypt OpenSSL SHA1 MD5
+SQLAuthTypes <%= @sql_auth_types %>
 #
 # Connection 
 SQLConnectInfo <%= @sql_dbname %>@<%= @sql_host %> <%= @sql_username %> <%= @sql_password %>
