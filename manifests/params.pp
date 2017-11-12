@@ -43,6 +43,8 @@ class proftpd::params {
   $sql_username         = 'dbusername'
   $sql_password         = 'dbpassword'
   $sql_auth_types       = 'Backend Crypt OpenSSL SHA1 MD5'
+  $sql_min_user_gid     = false
+  $sql_min_user_uid     = false
   $sql_cfg_append       = false
 
   $tls_engine           = 'off'
