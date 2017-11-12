@@ -68,7 +68,7 @@ Port				      <%= @port %>
 # In some cases you have to specify passive ports range to by-pass
 # firewall limitations. Ephemeral ports can be used for that, but
 # feel free to use a more narrow range.
-<% if @passive_ports == :undef -%>
+<% if @passive_ports == false -%>
 # PassivePorts    49152 65534
 <% else -%>
 PassivePorts      <%= @passive_ports %>
@@ -77,7 +77,7 @@ PassivePorts      <%= @passive_ports %>
 # If your host was NATted, this option is useful in order to
 # allow passive tranfers to work. You have to use your public
 # address and opening the passive ports used on your firewall as well.
-<% if @masquerade_address == :undef -%>
+<% if @masquerade_address == false -%>
 # MasqueradeAddress		1.2.3.4
 <% else -%>
 MasqueradeAddress	<%= @masquerade_address %>
