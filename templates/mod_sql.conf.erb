@@ -28,10 +28,10 @@ SQLConnectInfo <%= @sql_dbname %>@<%= @sql_host %> <%= @sql_username %> <%= @sql
 SQLUserInfo users userid passwd uid gid homedir shell
 SQLGroupInfo groups groupname gid members
 #
-  <% if @sql_min_user_gid == 'false' -%>
+  <% if @sql_min_user_gid != false -%>
   SQLMinUserGID <%= @sql_min_user_gid %>
   <% end -%>
-  <% if @sql_min_user_uid == 'false' -%>
+  <% if @sql_min_user_uid != false -%>
   SQLMinUserUID <%= @sql_min_user_uid %>
   <% else -%>
   SQLMinID 64000
