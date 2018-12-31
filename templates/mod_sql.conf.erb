@@ -37,7 +37,6 @@ SQLGroupInfo groups groupname gid members
   SQLMinID 64000
   <% end -%>
   CreateHome on 770
-  SQLLogFile /var/log/proftpd/sql.log
   SQLLog PASS updatecount
   SQLNamedQuery updatecount UPDATE "login_count=login_count+1, last_login=now() WHERE userid='%u'" users
   SQLLog STOR,DELE modified
